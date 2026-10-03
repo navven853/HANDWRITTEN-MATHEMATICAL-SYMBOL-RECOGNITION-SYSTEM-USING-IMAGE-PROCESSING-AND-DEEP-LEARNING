@@ -1,0 +1,82 @@
+================================================================================
+MATHEMATICAL SYMBOL RECOGNITION ANALYSIS REPORT
+================================================================================
+
+DATASET OVERVIEW:
+  Total Samples: 2983
+  Unique Symbols: 19
+  Symbol Categories: Digits (10), Operators (5), Special (4)
+
+FEATURE STATISTICS:
+  Edge_Density:
+    Mean: 0.3438
+    Std Dev: 0.1220
+    Range: [0.0423, 0.7624]
+  Contour_Count:
+    Mean: 3.8689
+    Std Dev: 1.6865
+    Range: [0.9226, 9.9802]
+  Aspect_Ratio:
+    Mean: 0.8666
+    Std Dev: 0.2739
+    Range: [0.3000, 1.7603]
+  Stroke_Width:
+    Mean: 2.4404
+    Std Dev: 0.5752
+    Range: [1.0000, 4.5347]
+  Curvature:
+    Mean: 0.3647
+    Std Dev: 0.2032
+    Range: [0.0000, 1.0000]
+  Image_Size:
+    Mean: 45.4449
+    Std Dev: 10.2373
+    Range: [28.0000, 63.0000]
+  Pixel_Intensity:
+    Mean: 0.6018
+    Std Dev: 0.1742
+    Range: [0.3001, 0.8997]
+
+SYMBOL COMPLEXITY RANKING (Top 5 Most Complex):
+  1. sqrt: 0.5700
+  2. integral: 0.5690
+  3. pi: 0.5610
+  4. sigma: 0.5600
+  5. 1: 0.4690
+
+RECOGNITION DIFFICULTY RANKING (Top 5 Most Difficult):
+  7. 2: 15.2128
+  11. 6: 6.8284
+  10. 5: 5.7810
+  5. 0: 4.5278
+  9. 4: 3.0749
+
+CATEGORY COMPARISON:
+  Digit:
+    Samples: 1570
+    Avg Edge Density: 0.3450
+    Avg Contour Count: 3.9940
+  Operator:
+    Samples: 785
+    Avg Edge Density: 0.2530
+    Avg Contour Count: 1.9770
+  Special:
+    Samples: 628
+    Avg Edge Density: 0.4540
+    Avg Contour Count: 5.9210
+
+KEY FINDINGS:
+  1. Special symbols show highest edge density (0.45 avg)
+  2. Operators have lowest contour complexity (2 avg)
+  3. Digits show consistent aspect ratio (0.8 avg)
+  4. Curvature varies significantly across symbol types
+  5. Image quality impacts recognition accuracy
+
+RECOMMENDATIONS:
+  1. Implement symbol-specific preprocessing pipelines
+  2. Use ensemble methods for improved accuracy
+  3. Apply data augmentation for difficult symbols
+  4. Normalize image quality before recognition
+  5. Consider category-based classification approach
+
+================================================================================
